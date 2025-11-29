@@ -13,19 +13,13 @@ This repository provides analysis code demonstrating how Nash equilibria emerge 
 ## Key Concepts
 
 ### Nash Equilibrium
-A stable strategy profile where no player can improve their payoff by unilaterally changing strategy:
-
-$$U^{i}(s^{*}) \geq U^{i}(s'_{i}, s^{*}_{-i}) \quad \forall i \in N$$
+A stable strategy profile where no player can improve their payoff by unilaterally changing strategy
 
 ### Protection Probability
-Agent's likelihood of resisting failure:
-
-$$p_{p} = \frac{p_{p,max}}{1 + \frac{c_{p,1/2}}{f_{p} \cdot c}}$$
+Agent's likelihood of resisting failure by protection potential
 
 ### Scale-Free Network
-Generated via Barabási-Albert preferential attachment where connection probability is proportional to node degree:
-
-$$p(i) = \frac{k_i}{\sum_j k_j}$$
+Generated via Barabási-Albert preferential attachment where connection probability is proportional to node degree
 
 ## Repository Structure
 
@@ -65,10 +59,8 @@ G = create_scale_free_graph(n=100, m=5)
 ```bibtex
 @article{park2025nash,
   title={Bounded Rationality Produces Nash Equilibria in Sports Networks: Protection, Learning, and Strategic Adaptation},
-  author={Park, Chulwook and Fath, Brian D.},
-  journal={Physica A: Statistical Mechanics and its Applications},
-  year={2025},
-  publisher={Elsevier}
+  author={Park, Chulwook},
+  year={2025}
 }
 ```
 
