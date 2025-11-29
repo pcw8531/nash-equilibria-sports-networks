@@ -6,14 +6,7 @@
 
 This repository demonstrates how Nash equilibria emerge naturally in sports networks through bounded rationality—without requiring perfect information or exhaustive utility calculations. Using scale-free networks where nodes represent sports agents, the model simulates evolutionary game dynamics under varying protection capacity, social learning, and strategic adaptation parameters.
 
-The key finding is that four distinct equilibrium patterns emerge based on the balance between protection capacity and risk propagation:
-
-| Scenario | Parameters | Outcome | Protection Probability |
-|----------|------------|---------|------------------------|
-| A | p_{p,max}=1.0, c_p=1.0 | Coexistence | p_p ≈ 0.47 |
-| B | p_{p,max}=0.1, c_p=1.0 | System failure | p_p ≈ 0.05 |
-| C | p_{p,max}=0.1, c_p=0.1 | Partial coexistence | p_p ≈ 0.05-0.10 |
-| D | p_{p,max}=1.0, c_p=0.1 | Non-failure | p_p ≈ 0.50 |
+The key finding is that four distinct equilibrium patterns emerge based on the balance between protection capacity and risk propagation.
 
 ## Repository Structure
 ```
@@ -34,23 +27,6 @@ nash-equilibria-sports-networks/
 │
 └── empirical_validation/
     └── sports_equilibria.py      # NBA strategy and European football data
-```
-
-## Core Equations
-
-**Capital Update:**
-```
-c_i(t+1) = 1 + (1 - f_m - f_p) · c_i(t)
-```
-
-**Protection Probability:**
-```
-p_p = p_{p,max} / (1 + c_{p,1/2} / (f_p · c_i))
-```
-
-**Imitation Probability:**
-```
-π = 1 / (1 + exp(-s × (capital_j - capital_i)))
 ```
 
 ## Installation
